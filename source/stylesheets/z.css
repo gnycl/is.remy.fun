@@ -1,0 +1,32 @@
+#gpg,div{
+    margin-left:auto;
+    margin-right:auto
+}
+html{
+    height:100%
+}
+body{
+    font-family:HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    width:95%;
+    display:table
+}
+.body{
+    display:table-cell;
+    vertical-align:middle
+}
+*{
+    text-align:center;
+    text-size-adjust:100%
+}
+a{
+    text-decoration:none;
+    font-weight:400
+}
+#gpg{
+    word-wrap:break-word;
+    width:350px;
+    display:block;
+    font-size:24px
+}
+
+

@@ -2,13 +2,15 @@ doctype html
 html
   head
     = partial 'layouts/meta'
-    = stylesheet_link_tag "all"
+    = stylesheet_link_tag "x"
+    = stylesheet_link_tag "y"
+    = stylesheet_link_tag "z"
     = favicon_tag 'images/favicon.png'
 
     // Include netlify identity widget for user registration
     script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" 
 
-    main.main-content
+    main
       = yield
 
     = javascript_include_tag 'main', async: true
