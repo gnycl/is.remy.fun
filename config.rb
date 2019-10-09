@@ -27,11 +27,11 @@ page '/*.txt', layout: false
 page "/partials/*", layout: false
 page "/admin/*", layout: false
 
-activate :blog do |blog|
-  blog.permalink = "news/{year}/{title}.html"
-  blog.sources = "posts/{title}.html"
-  blog.layout = "news-detail"
-end
+# activate :blog do |blog|
+#   blog.permalink = "news/{year}/{title}.html"
+#   blog.sources = "posts/{title}.html"
+#   blog.layout = "news-detail"
+# end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -40,13 +40,13 @@ end
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 # proxy product.yml files to product.html 
-data.products.each do |product|
-  # product is an array: [filename, {data}]
-  proxy "/product/#{product[1][:title].parameterize}/index.html", "product.html", 
-  locals: {product: product[1]}, 
-  layout: 'product-detail',
-  ignore: true
-end
+# data.products.each do |product|
+#   # product is an array: [filename, {data}]
+#   proxy "/product/#{product[1][:title].parameterize}/index.html", "product.html", 
+#   locals: {product: product[1]}, 
+#   layout: 'product-detail',
+#   ignore: true
+# end
 
 # Helpers
 # Methods defined in the helpers block are available in templates
